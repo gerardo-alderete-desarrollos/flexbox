@@ -4,17 +4,26 @@ body {
 }
 
 .flex-container {
+    /* display: none; */
+    /* display: inline-flex; */
     display: flex;
     background: yellow;
-    /* flex-direction: column; */
-    /* flex-direction: column-reverse; */
-    /* flex-direction: row; */
-    flex-direction: row-reverse;
+    /* flex-direction: row-reverse;
+    flex-wrap: wrap-reverse; */
+    flex-flow: row-reverse wrap-reverse /* con flex-flow manipulas flex-direction y flex-row a la vez
 
 }
 
 .flex-item {
     border: 1px solid #000;
-  
     margin: 1rem;
+    /* padding: .5em 1em; */
+    font-size: 20px;
+    width: 100px;
+    height: 100px;
 }
+
+/* .button {
+    background: yellow;
+    display: inline-flex
+} */
