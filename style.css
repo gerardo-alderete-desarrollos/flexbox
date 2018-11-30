@@ -5,51 +5,52 @@
 
 /*reset elements*/
 
-.menu {
-    list-style: none;
-    padding-left: 0;
-    margin-top: 0;
-    margin-bottom: 0;
+.banner {
+    display: flex;
+    background: yellow;
+    height: 300px;
+
 }
 
-.menu__link {
-    text-decoration: none;
+.banner__item{
+    flex: 1;
     color: #fff;
+    font-weight: bold;
+    font-style: 1.2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: flex-grow 1s;
+
 }
 
-/* Layout basico */
-.menu {
-    width: 50%;
-    background: #333;
-
+.banner__item:hover {
+    flex-grow: 10;
 }
 
-.menu__item {
-    border-bottom: 1px solid #222;
+.banner__item:hover .banner__title{
+    transform: rotate(0);
+   
 }
 
-.menu__item:hover {
-  background: rgba(0,0,0,.5);  
+.banner__item:nth-child(1){
+    background: hsl(90, 100%, 40%);
+}
+.banner__item:nth-child(2){
+    background: hsl(30, 100%, 40%);
+
+}
+.banner__item:nth-child(3){
+    background: hsl(268, 100%, 40%);
+    
+}
+.banner__item:nth-child(4){
+    background: hsl(60, 16%, 76%);
+    
 }
 
-.menu__link {
-    display: block;
-    padding: .5em 1em;
-}
-
-/* Agregando flexbox */
-@media  screen and (min-width: 960px){
-    .menu{
-        display: flex;
-        width: 100%;
-    }
-
-    .menu__item {
-        flex: 1;
-        border-bottom: none;
-        border-right: 1px solid #222;
-    }
-    .menu__link {
-        text-align: center;
-    }
+.banner__title{
+    margin: 0;
+    transform: rotate(-90deg);
+    transition: transform 0.5s 0.5s;
 }
