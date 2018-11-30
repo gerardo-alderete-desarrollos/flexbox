@@ -10,9 +10,11 @@
 
 .item {
     background: pink;
-    flex-grow: 1;
-    flex-basis: 0;
-    /* width: 300px; */
+    /* flex agrupa a flex-grow , flex-basis y flex-shrink */
+    /* flex: 1 1 0; */
+    /* flex: auto; */
+    /* flex: none; */
+    flex: 1; /*con este tenemos cajas del mismo tamaño sin importar el numero de cajas que sean*/
 }
 
 
