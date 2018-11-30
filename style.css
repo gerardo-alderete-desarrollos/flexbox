@@ -3,13 +3,14 @@
     font-size: 1.5em;
     background: yellow;
     height: 300px;
-    justify-content: center;
-    align-items: center;
+    flex-wrap: wrap;
 }
 
 .item {
     background: pink;
     height: 100px;
+    width: 100px;
+    margin: 20px;
 }
 
 
@@ -18,9 +19,17 @@
     background: cyan;
 }
 
-.item:nth-child(3) {
-    /* align-self: flex-start; */
-    align-self: flex-end;
+/* .item:first-child {
+    order: -2;
+}
 
+.item:nth-child(3) {
+    order: -1;
+
+} */
+
+.discount {
+    border: 2px solid red;
+    order: -1;
 }
 
