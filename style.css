@@ -2,19 +2,14 @@
     display: flex;
     font-size: 1.5em;
     background: yellow;
-    /* flex-direction: column; */
-  
-
-    
+    height: 300px;
+    justify-content: center;
+    align-items: center;
 }
 
 .item {
     background: pink;
-    /* flex agrupa a flex-grow , flex-basis y flex-shrink */
-    /* flex: 1 1 0; */
-    /* flex: auto; */
-    /* flex: none; */
-    flex: 1; /*con este tenemos cajas del mismo tamaño sin importar el numero de cajas que sean*/
+    height: 100px;
 }
 
 
@@ -24,6 +19,8 @@
 }
 
 .item:nth-child(3) {
-    flex-shrink: 5;
+    /* align-self: flex-start; */
+    align-self: flex-end;
+
 }
 
