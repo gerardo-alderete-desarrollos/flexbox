@@ -2,40 +2,38 @@
     box-sizing: border-box;
 }
 body {
+    margin: 0;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    justify-content: center;
-    align-items: center;
-    background: #f0f0f0;
-
 }
 
-.user {
-    padding: 1em;
-    border: 1px solid #ccc;
-    background: #fff;
-    border-radius: .25rem;
-    margin: 1em;
+.content {
     display: flex;
-
-    align-items: center;
-}
-
-.user__img{
-    border-radius: 50%;
-    width: 120px;
-    margin-right: 1em;
-}
-
-.user__name{
+    flex: 1;
 
 }
 
-.user__country {
+header {
+    background: hsl(340, 100%, 65%);
+    padding: 1em;
+}
+
+main {
+    background: hsl(180, 90%, 65%);
+    flex: 1;
+}
+
+aside {
+    background: hsl(1100, 100%, 55%);
+    width: 25%;
+    order: -1;
 
 }
 
-.user__role{
+footer {
+    background: hsl(220, 80%, 50%);
+    padding: 1em;
+
 
 }
