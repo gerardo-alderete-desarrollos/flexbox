@@ -1,17 +1,41 @@
 * {
     box-sizing: border-box;
 }
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background: #f0f0f0;
 
-.header {
-    background: yellow;
-    font-size: 5em;
-    font-weight: bold;
-
-    display: inline-flex;
-    height: 400px;
-    /* align-items: center; */
 }
 
-.header p {
-    margin: 0;
+.user {
+    padding: 1em;
+    border: 1px solid #ccc;
+    background: #fff;
+    border-radius: .25rem;
+    margin: 1em;
+    display: flex;
+
+    align-items: center;
+}
+
+.user__img{
+    border-radius: 50%;
+    width: 120px;
+    margin-right: 1em;
+}
+
+.user__name{
+
+}
+
+.user__country {
+
+}
+
+.user__role{
+
 }
