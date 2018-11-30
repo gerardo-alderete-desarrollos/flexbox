@@ -1,25 +1,27 @@
 .container {
     display: flex;
-    font-size: 3em;
+    font-size: 1.5em;
     background: yellow;
-   flex-wrap: wrap;
+    /* flex-direction: column; */
+  
 
     
 }
 
 .item {
     background: pink;
-   width: 300px;
-   flex-shrink: 3;
-}
-
-.item:nth-child(3) {
-    flex-shrink: 5;
+    flex-grow: 1;
+    flex-basis: 0;
+    /* width: 300px; */
 }
 
 
 
 .item:nth-child(even) {
     background: cyan;
+}
+
+.item:nth-child(3) {
+    flex-shrink: 5;
 }
 
