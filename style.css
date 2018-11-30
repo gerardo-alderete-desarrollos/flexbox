@@ -2,75 +2,24 @@
     display: flex;
     font-size: 3em;
     background: yellow;
+   flex-wrap: wrap;
+
     
 }
 
 .item {
     background: pink;
-    /* flex-grow: 10; */
-    /* flex-grow: 0.5; */
-    /* flex-grow indica el factor de crecimiento
-    el navegadro divide el espacio disponible entre la cantidad
-    total de factores de crecimiento y se los
-    asigna a los items */
+   width: 300px;
+   flex-shrink: 3;
 }
 
-.item:nth-child(3){
-    flex-grow: 4;
+.item:nth-child(3) {
+    flex-shrink: 5;
 }
 
-/* Cantidad total de flex-grow:
-1
-1
-4
-1
-1 
-= 8
 
-calcular factor de crecimiento:
-espacio disponible / 8
-
-suponiendo que el espacio disponible 
-sea : 160 , 160 / 8 = 20
-
-teniendo el facor de crecimiento el valor lo multiplica por 
-el valor de flex-grow en cada caso
-y lo suma.
-
-    1 * 20 = 20
-    1 * 20 = 20
-    4 * 20 = 80
-    1 * 20 = 20
-
-    Ese valor se suma al tamaño original.
-    Suponiendo que sus tamaños originales sea:
-
-        20 + 20 = 40
-        10 + 20 = 30
-        100 + 80 = 180
-        30 + 20 = 50
-        15 + 20 = 180
-    
-*/
 
 .item:nth-child(even) {
     background: cyan;
 }
 
-.page {
-    display: flex;
-    height: 100vh;
-    background: yellow;
-
-}
-
-.aside {
-    width: 200px;
-    background: red;
-    
-}
-
-.main {
-    background: green;
-    flex-grow: 1;
-}
