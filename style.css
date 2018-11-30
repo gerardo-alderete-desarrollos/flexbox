@@ -1,50 +1,25 @@
-body {
-    font-size: 4rem;
-
-}
-
-.flex-container {
+.container {
     display: flex;
+    height: 200px;
     background: yellow;
-    /* flex-direction: row-reverse;
-    flex-wrap: wrap-reverse; */
-    flex-flow: wrap;
-    /* justify-content: flex-start; */
-    /* justify-content: flex-end; */
-    /* justify-content: center; */
-    /* justify-content: space-around; */
-    justify-content: space-between;
-    height: 300px;
-    /* align-items: center; */
-    /* align-items: flex-start; */
-    /* align-items: flex-end; */
-    /* align-items: stretch; */
-    /* align-items: baseline; */
-    /* align-content: flex-end; */
-    /* align-content: flex-start; */
-    /* align-content: center; */
-    /* align-content: space-around; */
-    align-content: space-between;
-
-
-
-
-
-
-
-
-
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5em;
 }
 
-.flex-item {
-    border: 1px solid #000;
-    margin: 1rem;
-    /* padding: .5em 1em; */
-    font-size: 20px;
-    width: 100px;
-    /* height: 100px; */
+.container::before, 
+.container::after {
+    content: "";
+    display: block;
+    height: 5px;
+    /* width: 200px; */
+    flex: 1;
+    background: linear-gradient(to left, red,white);
+    margin-right: .5em;
 }
 
-/* .flex-item:nth-child(2) {
-    font-size: 36px;
-} */
+.container::after {
+    background: linear-gradient(to right, red, white);
+    margin-right: 0;
+    margin-left: .5em;
+}
